@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="styls.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to My Travel Blog</h2>
+            <p>Discover the world through my adventures and tips. Let's explore together!</p>
+        </section>
+
+        <section id="destinations">
+            <h2>Top Destinations</h2>
+            <div class="destination">
+                <h3>Paris, France</h3>
+                <img src="paris.jpg" alt="Paris">
+                <p>Experience the romance and beauty of Paris.</p>
+            </div>
+            <div class="destination">
+                <h3>Tokyo, Japan</h3>
+                <img src="tokyo.jpg" alt="Tokyo">
+                <p>Discover the vibrant culture and technology in Tokyo.</p>
+            </div>
+            <!-- Add more destinations as needed -->
+        </section>
+
+        <section id="tips">
+            <h2>Travel Tips</h2>
+            <article>
+                <h3>How to Pack Light for a Long Trip</h3>
+                <p>Packing light is essential for comfortable travel. Here are my top tips...</p>
+            </article>
+            <article>
+                <h3>Best Times to Visit Popular Destinations</h3>
+                <p>Learn the best times to visit your favorite destinations to avoid crowds and enjoy great weather...</p>
+            </article>
+            <!-- Add more articles as needed -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="/submit-contact" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Blog</p>
+        <p>Follow me on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
